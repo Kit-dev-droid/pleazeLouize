@@ -25,7 +25,13 @@
                 "glob": "**/*",
                 "input": "public"
               },
-              "src/_redirects"
+              "src/_redirects",
+               "src/favicon.ico",
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "assets"
+              }
             ],
             "styles": [
               "src/styles.scss"
