@@ -23,40 +23,19 @@ export class NavigationBar {
                 }
             },
             {
-                label: 'Features',
-                icon: 'pi pi-star'
+                label: 'Shop',
+                icon: 'pi pi-search',
+                command: () => {
+                    this.router.navigate(['/store']);
+                }
             },
             {
-                label: 'Projects',
-                icon: 'pi pi-search',
-                items: [
-                    {
-                        label: 'Components',
-                        icon: 'pi pi-bolt'
-                    },
-                    {
-                        label: 'Blocks',
-                        icon: 'pi pi-server'
-                    },
-                    {
-                        label: 'UI Kit',
-                        icon: 'pi pi-pencil'
-                    },
-                    {
-                        label: 'Templates',
-                        icon: 'pi pi-palette',
-                        items: [
-                            {
-                                label: 'Apollo',
-                                icon: 'pi pi-palette'
-                            },
-                            {
-                                label: 'Ultima',
-                                icon: 'pi pi-palette'
-                            }
-                        ]
-                    }
-                ]
+                label: 'about',
+                icon: 'pi pi-star',
+                command: () => {
+                    this.router.navigate(['/about']);
+                }
+               
             },
             {
                 label: 'Contact',
