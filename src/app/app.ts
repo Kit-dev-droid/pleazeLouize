@@ -1,12 +1,21 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { LayoutComponent } from './layout-component/layout-component';
+import { PrimeNG } from 'primeng/config';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [LayoutComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
   protected readonly title = signal('pleazeLouize');
+
+   constructor(private primeng: PrimeNG) {}
+
+    ngOnInit() {
+        this.primeng.ripple.set(true);
+    }
 }
