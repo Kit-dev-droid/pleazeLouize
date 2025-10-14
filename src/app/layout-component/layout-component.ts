@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NavigationBar } from '../shared/navigation-bar/navigation-bar';
-import { FooterComponent } from '../shared/footer-component/footer-component';
+import { NavigationBar } from '../shared/nav-bar/navigaton-component/component/navigation-bar';
+import { FooterComponent } from '../shared/footer/footer-component/component/footer-component';
 
 @Component({
   selector: 'app-layout-component',
